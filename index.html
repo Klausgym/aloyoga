@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alo Yoga | $500 Reward Offer (Sample)</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ink:#161514;
+      --stone:#f4f1ec;
+      --sand:#e7e1d7;
+      --clay:#a89f91;
+      --muted:#6f6a62;
+      --line:#ddd7cc;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:'Jost',system-ui,sans-serif;
+      background:var(--stone);
+      color:var(--ink);
+      display:flex;
+      justify-content:center;
+      padding:28px 14px 44px;
+      min-height:100vh;
+    }
+    .wrap{max-width:430px;width:100%}
+    .card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:4px;
+      overflow:hidden;
+      animation:rise .7s cubic-bezier(.23,1,.32,1) both;
+    }
+    @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+ 
+    .brandbar{
+      padding:18px 20px;
+      text-align:center;
+      border-bottom:1px solid var(--line);
+      font-family:'Jost',sans-serif;
+      font-weight:500;
+      letter-spacing:.42em;
+      font-size:20px;
+      text-transform:uppercase;
+      padding-left:calc(20px + .42em);
+    }
+ 
+    .hero{
+      position:relative;
+      aspect-ratio:1.25/1;
+      background:
+        radial-gradient(ellipse at 30% 20%, rgba(255,255,255,.55), transparent 55%),
+        linear-gradient(160deg,#d9d1c3 0%,#c4baa8 55%,#a89f91 100%);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .hero::before{
+      content:'';
+      position:absolute;
+      width:62%;
+      aspect-ratio:1;
+      border:1px solid rgba(22,21,20,.22);
+      border-radius:50%;
+    }
+    .hero::after{
+      content:'';
+      position:absolute;
+      width:84%;
+      aspect-ratio:1;
+      border:1px solid rgba(22,21,20,.10);
+      border-radius:50%;
+    }
+    .hero-inner{position:relative;z-index:1;text-align:center}
+    .hero-eyebrow{
+      font-size:11px;
+      letter-spacing:.3em;
+      text-transform:uppercase;
+      color:var(--ink);
+      opacity:.7;
+      margin-bottom:6px;
+    }
+    .hero-amount{
+      font-family:'Cormorant Garamond',serif;
+      font-weight:500;
+      font-size:84px;
+      line-height:1;
+      letter-spacing:-.01em;
+    }
+    .hero-sub{
+      margin-top:8px;
+      font-size:11px;
+      letter-spacing:.3em;
+      text-transform:uppercase;
+      opacity:.7;
+    }
+ 
+    .body{padding:28px 24px 26px;text-align:center}
+    .headline{
+      font-family:'Cormorant Garamond',serif;
+      font-weight:500;
+      font-size:34px;
+      line-height:1.12;
+    }
+    .lede{
+      margin-top:10px;
+      font-size:14px;
+      font-weight:300;
+      color:var(--muted);
+      line-height:1.6;
+    }
+ 
+    .steps{
+      margin-top:24px;
+      text-align:left;
+      border-top:1px solid var(--line);
+    }
+    .step{
+      display:flex;
+      gap:16px;
+      padding:16px 0;
+      border-bottom:1px solid var(--line);
+      animation:rise .6s cubic-bezier(.23,1,.32,1) both;
+    }
+    .step:nth-child(1){animation-delay:.15s}
+    .step:nth-child(2){animation-delay:.25s}
+    .step:nth-child(3){animation-delay:.35s}
+    .step:nth-child(4){animation-delay:.45s}
+    .n{
+      font-family:'Cormorant Garamond',serif;
+      font-size:24px;
+      line-height:1;
+      color:var(--clay);
+      width:22px;
+      flex-shrink:0;
+    }
+    .s-title{font-size:14px;font-weight:500;letter-spacing:.02em}
+    .s-desc{font-size:13px;font-weight:300;color:var(--muted);margin-top:3px;line-height:1.5}
+ 
+    .cta{
+      margin-top:26px;
+      display:block;
+      width:100%;
+      padding:17px 20px;
+      background:var(--ink);
+      color:#fff;
+      border:1px solid var(--ink);
+      border-radius:2px;
+      font-family:'Jost',sans-serif;
+      font-weight:500;
+      font-size:13px;
+      letter-spacing:.24em;
+      text-transform:uppercase;
+      text-align:center;
+      text-decoration:none;
+      cursor:pointer;
+      transition:background .25s ease,color .25s ease;
+    }
+    .cta:hover{background:#fff;color:var(--ink)}
+ 
+    .disclosure{
+      margin-top:18px;
+      font-size:11px;
+      font-weight:300;
+      color:var(--muted);
+      line-height:1.6;
+    }
+    .foot{
+      margin-top:16px;
+      text-align:center;
+      font-size:11px;
+      color:#a39d92;
+      line-height:1.6;
+    }
+    .sample-tag{
+      display:inline-block;
+      margin-bottom:14px;
+      padding:4px 10px;
+      border:1px solid var(--line);
+      font-size:10px;
+      letter-spacing:.22em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+  </style>
+</head>
+<body>
+<main class="wrap">
+  <div class="card">
+    <div class="brandbar">Alo</div>
+ 
+    <div class="hero">
+      <div class="hero-inner">
+        <div class="hero-eyebrow">Alo Yoga</div>
+        <div class="hero-amount">$500</div>
+        <div class="hero-sub">Reward Offer</div>
+      </div>
+    </div>
+ 
+    <div class="body">
+      <span class="sample-tag">Sample layout</span>
+      <h1 class="headline">Your $500 Alo Yoga reward</h1>
+      <p class="lede">Review the steps below to see how the offer works before you begin.</p>
+ 
+      <div class="steps">
+        <div class="step">
+          <div class="n">1</div>
+          <div>
+            <p class="s-title">Select the button below</p>
+            <p class="s-desc">You'll be taken to the offer page to check eligibility.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n">2</div>
+          <div>
+            <p class="s-title">Enter your basic details</p>
+            <p class="s-desc">A valid email is needed for confirmation updates.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n">3</div>
+          <div>
+            <p class="s-title">Complete the required deals</p>
+            <p class="s-desc">The offer page lists everything required to qualify.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n">4</div>
+          <div>
+            <p class="s-title">Receive your reward</p>
+            <p class="s-desc">Delivered after the offer requirements are verified.</p>
+          </div>
+        </div>
+      </div>
+ 
+      <a class="cta" href="https://giftclick.org/?offer_id=3674&aff_id=122650&source=aloyoga" target="_blank" rel="nofollow noopener">Claim My $500</a>
+ 
+      <p class="disclosure">
+
+      </p>
+    </div>
+  </div>
+ 
+  <div class="foot">
+    Independent promotional page. Not affiliated with or endorsed by Alo Yoga.<br>
+    Terms and conditions apply.
+  </div>
+</main>
+</body>
+</html>
